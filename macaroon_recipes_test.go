@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/lightninglabs/lndclient"
+	"github.com/rsafier/lndclient"
 	"github.com/stretchr/testify/require"
 )
 
