@@ -246,6 +246,11 @@ func NewLndServices(cfg *LndServicesConfig) (*GrpcLndServices, error) {
 				defaultChainSubDir, "bitcoin", "regtest",
 			)
 
+		case NetworkSignet:
+			macaroonDir = filepath.Join(
+				defaultLndDir, defaultDataDir,
+				defaultChainSubDir, "bitcoin", "signet",
+			)
 		default:
 			return nil, fmt.Errorf("unsupported network: %v",
 				cfg.Network)
